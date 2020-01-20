@@ -1,0 +1,92 @@
+/*---------- CONTAINER ---------- */
+#container {
+	max-width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	display: grid;
+	border: 1px solid #ccc;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) and (min-width: 
+
+200px;) {
+  #container {
+    flex: 50%;
+  }
+}
+/* ---------- FIM ----------*/
+
+
+/*---------- AVATAR ----------*/
+.item div {
+	width: 50px;
+	height: 50px;
+	border-radius: 90px;
+	background-size: cover;
+	
+	
+	/*background-color: #cc66cc;
+	flex-basis: 0;
+	flex-grow: 1.5;
+	flex: 0;   flex valores 0 ou 1*/
+	
+} 
+.div1 {
+	flex-basis: 0;
+	flex-grow: 1.5;
+	display: inline-flex;
+	background-color: red;
+	align-items: flex-end;
+}
+
+.div2 {
+	flex-basis: 0;
+	flex-grow: 1.5;
+	display: inline-block;
+	background-color: black;
+	align-items: flex-start;
+}
+
+.div3 {
+	flex-basis: 0;
+	flex-grow: 1.5;
+	display: inline-block;
+	background-color: yellow;
+	align-items: flex-start;
+}
+
+/*---------- PODIO ---------- */
+.podio {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end; /*bottom to top*/
+	justify-content: flex-end; 
+}
+@media screen and (max-width: 992px) and (min-width: 
+
+200px;) {
+  .podio {
+    flex: 50%;
+  }
+}
+
+/*---------- FIM ---------- */
+
+/*---------- ANIMAÇÃO ----------*/  
+.podio img { animation: animacao 5s ease forwards 
+
+alternate; 
+}
+
+@keyframes animacao {
+   from { 
+    height: 5px;
+  }
+   to { 
+    height: 300px;
+  }
+}
+/* ---------- FIM ----------*/
